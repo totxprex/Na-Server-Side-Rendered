@@ -2,7 +2,7 @@
 
 let tour = document.querySelector(`.title`).textContent.replaceAll(` `, `-`)
 
-const serverUrl = `https://shielded-scrubland-82465.herokuapp.com/`
+const serverUrl = `https://shielded-scrubland-82465.herokuapp.com`
 
 let map_container = document.querySelector('map_cont')
 

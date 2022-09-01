@@ -1,6 +1,6 @@
 'use strict'
 
-const serverUrl = `https://shielded-scrubland-82465.herokuapp.com/`
+const serverUrl = `https://shielded-scrubland-82465.herokuapp.com`
 
 document.querySelectorAll('.details_Btn').forEach(function (e) {
   e.addEventListener('click', function (btn) {
