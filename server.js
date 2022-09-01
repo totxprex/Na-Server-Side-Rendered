@@ -20,7 +20,7 @@ app.use(morgan('dev'))
 app.use(express.json())
 
 let helmet = require('helmet')
-app.use(helmet())
+
 
 app.use(
   helmet.contentSecurityPolicy({

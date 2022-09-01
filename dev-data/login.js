@@ -1,14 +1,14 @@
 'use strict'
 
 document.querySelector('.screen_title').addEventListener('click', function () {
-  document.location.href = `http://127.0.0.1:5500/`
+  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin/`
 })
 
 document.querySelector('.signup_Btn').addEventListener('click', function () {
-  document.location.href = `http://127.0.0.1:5500/vsignup`
+  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin/vsignup`
 })
 
-let backendserver = `http://127.0.0.1:5500`
+let backendserver = `https://shielded-scrubland-82465.herokuapp.com/vlogin`
 
 let emailField = document.querySelector('.in')
 let passField = document.querySelector('.in2')

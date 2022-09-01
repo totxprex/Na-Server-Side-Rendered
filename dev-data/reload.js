@@ -1,8 +1,8 @@
-let backendserver = `http://127.0.0.1:5500`
+let backendserver = `https://shielded-scrubland-82465.herokuapp.com/vlogin`
 
 if (localStorage.getItem('natoursname')) {
   document.location.href = `${backendserver}/vprofile?${localStorage.getItem('natoursname')}`
 }
 else {
-  document.location.href = `http://127.0.0.1:5500/`
+  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin/`
 }
