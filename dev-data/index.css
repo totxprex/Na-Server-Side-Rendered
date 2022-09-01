@@ -1,0 +1,649 @@
+* {
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(235, 232, 232);
+  margin: 30px;
+}
+
+.tourPage {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  margin: 30px;
+}
+
+.menu_img {
+  width: 60px;
+}
+
+.navbarCont,
+.navbarCont_tourPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(73, 72, 72);
+  height: fit-content;
+  padding: 10px;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 50px;
+}
+
+.navbarCont_tourPage {
+  margin-bottom: 0px;
+  z-index: 10;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.login_Btn,
+.signup_Btn,
+.signout_Btn {
+  width: 120px;
+  height: 40px;
+  border: solid rgb(139, 137, 137);
+  border-width: 1px;
+  background-color: rgb(73, 72, 72);
+  border-radius: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.profileImg,
+.profileImg2 {
+  width: 60px;
+  cursor: pointer;
+  border-radius: 60px;
+}
+
+.login_Btn:hover,
+.signup_Btn:hover,
+.signout_Btn:hover {
+  border: solid 1px rgb(197, 195, 195);
+}
+
+.search_res {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.each_search_res {
+  width: 270px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 2px 2px rgb(218, 217, 217);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.each_res_img {
+  width: 270px;
+  transform: skewY(-5deg);
+  opacity: 0.8;
+  margin-top: -13px;
+}
+
+.screen_title {
+  cursor: pointer;
+}
+
+.tour_name_cont {
+  background-color: rgb(144, 255, 144);
+  opacity: 0.9;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transform: skewY(-5deg);
+  margin-left: 55px;
+  font-size: medium;
+  margin-top: -20px;
+}
+
+.difficulty_duration {
+  font-size: x-small;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.tour_title {
+  font-size: x-small;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.tour_details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  width: 190px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.tour_details p {
+  font-size: x-small;
+  margin: 0px 0px 0px 0px;
+}
+
+.each_res_footer {
+  background-color: rgb(228, 225, 225);
+  width: 270px;
+  height: 60px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 50px;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.details_Btn {
+  width: 100px;
+  height: 40px;
+  opacity: 0.7;
+  background-color: rgb(24, 167, 11);
+  border-radius: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.4s;
+  outline: none;
+  border: none;
+}
+
+.details_Btn:hover {
+  opacity: 0.9;
+}
+
+.dt {
+  font-size: x-small;
+  margin: 0px;
+}
+
+.ft {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5px;
+  gap: 20px;
+  margin-top: 130px;
+}
+
+.ft a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+.ft a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+/* Tour Page Styles */
+
+.image_large {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-image: url();
+  background-size: 1300px;
+  filter: opacity(0.7);
+  transform: skewY(-3deg);
+  margin-top: -33px;
+  z-index: 1;
+  position: relative;
+}
+
+.title {
+  background-color: rgb(68, 247, 68);
+  border: solid rgb(173, 247, 197);
+  padding: 20px;
+  color: white;
+  font-size: x-large;
+  transform: skewY(-3deg);
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+.lil_details {
+  opacity: 100;
+  filter: opacity(100);
+  color: rgb(7, 243, 7);
+}
+
+.screen2_cont {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 130px 0px 0px;
+  margin-top: -10px;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  padding: 80px 0px 80px 0px;
+  background-color: rgb(238, 248, 237);
+  opacity: 0.2;
+}
+
+h3 {
+  color: rgb(108, 250, 108);
+  margin: 0;
+  margin-left: 40px;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0px;
+  font-size: small;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-left: -30px;
+}
+
+.list_tour {
+  list-style: none;
+  padding-left: 0px;
+  font-size: small;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px
+}
+
+.tourGuide_img {
+  width: 30px;
+  border-radius: 30px;
+}
+
+.abt {
+  color: rgb(108, 250, 108);
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.div2 {
+  padding: 80px 0px 80px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 400px;
+  overflow: auto;
+}
+
+.div2 p {
+  font-size: small;
+  font-weight: 400;
+}
+
+.screen3_image_gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 300px;
+  transform: skewY(-3deg);
+  margin-top: 30px;
+}
+
+.screen3_image_gallery img {
+  width: 412px;
+  height: 300px;
+}
+
+#map,
+.review_cont {
+  height: 400px;
+  transform: skewY(-3deg);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.review_cont {
+  background-image: linear-gradient(#0cebeb, #20e3b2, #29ffc6);
+  align-items: center;
+  padding-left: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9c9c9c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #606161;
+}
+
+.each_rev_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  width: 1150px;
+  gap: 30px;
+  flex-wrap: nowrap;
+  transform: skewY(3deg);
+}
+
+.each_reviews {
+  background-color: white;
+  min-width: 310px;
+  max-width: 310px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.each_reviews p {
+  font-size: x-small;
+  color: rgb(163, 161, 161);
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.review_img,
+.review_star {
+  width: 40px;
+  margin-bottom: 0px;
+}
+
+.a,
+.b {
+  margin-bottom: 5px;
+}
+
+
+
+/* Login Styles */
+
+.login_cont,
+.resetPass_cont {
+  height: 400px;
+  width: 500px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  padding-left: 50px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(151, 151, 151);
+  animation: show 0.8s;
+}
+
+.login_cont_signup {
+  height: fit-content;
+  overflow: auto;
+  width: 500px;
+  border-radius: 5px;
+  margin: auto;
+  padding: 20px;
+  padding-left: 50px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(151, 151, 151);
+}
+
+.loginHead,
+.signupHead {
+  color: rgb(3, 124, 3);
+}
+
+.ltext {
+  margin-bottom: 7px;
+  font-size: small;
+}
+
+.u {
+  margin-bottom: 0px;
+  font-size: small;
+}
+
+.in,
+.in2,
+.inSignupEmail,
+.inSignupPass,
+.inSignupName,
+.pSignupName,
+.pSignupEmail,
+.resetIn {
+  width: 400px;
+  height: 45px;
+  border-style: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #e0e0e0;
+  opacity: 0.5;
+  padding: 5px;
+  transition: all 0.5s;
+}
+
+.in:focus,
+.resetIn:focus {
+  opacity: 1;
+}
+
+.forgot {
+  font-size: small;
+  opacity: 0.5;
+  margin-left: 150px;
+}
+
+.lbtn,
+.sbtn,
+.pbtn,
+.pbtn2,
+.resetbtn,
+.dbtn {
+  width: 130px;
+  height: 35px;
+  margin-left: 140px;
+  margin-top: 25px;
+  background-color: rgb(8, 165, 8);
+  border-radius: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.4s;
+  border-style: none;
+  opacity: 0.8;
+}
+
+.lbtn:hover,
+.sbtn:hover,
+.pbtn:hover,
+.resetbtn,
+.dbtn:hover {
+  opacity: 0.7;
+}
+
+.photoInput,
+.photoInput_profile {
+  margin-top: 20px;
+}
+
+::-webkit-file-upload-button {
+  border: solid rgb(175, 174, 174);
+  border-width: 1px;
+  border-radius: 20px;
+  background-color: white;
+  height: 30px;
+  color: black;
+  padding: 0px 20px 0px 20px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+::-webkit-file-upload-button:hover {
+  border: solid rgb(94, 228, 99);
+  border-width: 1px;
+}
+
+
+
+
+/* Profile Page */
+
+.profile_form_cont {
+  height: fit-content;
+  width: 700px;
+  padding: 20px;
+  padding-left: 50px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(151, 151, 151);
+  opacity: 0.8;
+}
+
+.profile_cont {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+  justify-content: center;
+  padding: 50px;
+  gap: 0px;
+}
+
+.pbtn,
+.pbtn2 {
+  margin-left: 240px;
+}
+
+.pSignupEmail,
+.pSignupName {
+  width: 500px;
+}
+
+.side_menu {
+  width: 300px;
+  height: 875px;
+  background-image: linear-gradient(#11998e, #38ef7d);
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.s,
+.ms,
+.mr,
+.h {
+  width: fit-content;
+  height: 45px;
+  color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.clicked {
+  border-left: solid white;
+  border-width: 5px;
+}
+
+.hr {
+  margin: 50px 0px 50px 0px;
+  border-width: 1px;
+  width: 600px;
+  text-align: center;
+  opacity: 0.5;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Profile</title>
+  <link rel="icon" href="/img/favicon.png">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,1000&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/leaflet/leaflet.css">
+</head>
+<body class="tourPage">
+  <nav class="navbarCont_tourPage">
+    <p style="color: white;" class="screen_title">
+      ALL TOURS
+    </p>
+    <img class="menu_img" src="img/logo-white.png"></img>
+    <div class="menu">
+      <button class="signout_Btn">Sign Out</button>
+      <img src="/img/user_placeholder.png" class="profileImg ">
+    </div>
+  </nav>
+  <form class="profile_cont" action="http://127.0.0.1:5500/file/upload" method="post" enctype="multipart/form-data">
+    <div class="side_menu">
+      <div class="s clicked">
+        ✴️ &nbsp;&nbsp;&nbsp; SETTINGS
+      </div>
+      <div class="ms">
+        📑 &nbsp;&nbsp;&nbsp; MY BOOKMARK
+      </div>
+      <div class="mr">
+        ⛺ &nbsp;&nbsp;&nbsp; MY REVIEWS
+      </div>
+      <div class="h">
+        💵 &nbsp;&nbsp;&nbsp; BILLING
+      </div>
+    </div>
+    <div class="profile_form_cont">
+      <h4 class="signupHead">YOUR ACCOUNT SETTINGS</h4>
+      <p class="ltext">
+        Name
+      </p>
+      <input class="pSignupName" type="text" name="name" placeholder="John Doe">
+      <br>
+      <p class="ltext">
+        Email Address
+      </p>
+      <input class="pSignupEmail" type="email" name="email" placeholder="email@gmail.com">
+      <br>
+      <br>
+      <img src="/img/user_placeholder.png" class="profileImg ">
+      <input class="photoInput_profile" name="profilePic" type="file" accept="image/jpg,image/png">
+      <progress class="progress hide">Loading</progress>
+      <br>
+      <button class="pbtn">Save Settings</button>
+      <hr class="hr">
+      <h4 class="signupHead">PASSWORD CHANGE</h4>
+      <p class="ltext">
+        Current Password
+      </p>
+      <input class="pSignupName currPass" type="text" name="name" placeholder="*********">
+      <br>
+      <p class="ltext">
+        New Password
+      </p>
+      <input class="pSignupEmail newPass" type="text" name="email" placeholder="*********">
+      <p class="ltext">
+        Confirm Password
+      </p>
+      <input class="pSignupEmail confirmPass" type="test" name="email" placeholder="*********">
+      <progress class="progress hide">Loading</progress>
+      <br>
+      <button class="pbtn">Save Password</button>
+    </div>
+  </form>
+</body>
+<script type="module" src="/profile.js"></script>
+</html>

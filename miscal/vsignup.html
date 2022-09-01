@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Page</title>
+  <link rel="icon" href="/img/favicon.png">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,1000&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/leaflet/leaflet.css">
+</head>
+
+<body class="tourPage">
+  <nav class="navbarCont_tourPage">
+    <p style="color: white;" class="screen_title">
+      ALL TOURS
+    </p>
+    <img class="menu_img" src="img/logo-white.png"></img>
+    <div class="menu">
+      <button class="login_Btn">Log In</button>
+      <button class="signup_Btn">Sign Up</button>
+      <img src="/img/user_placeholder.png" class="profile hide">
+    </div>
+  </nav>
+  <form class="login_cont_signup">
+    <h4 class="signupHead">LOG INTO YOUR ACCOUNT</h4>
+    <p class="ltext">
+      Name
+    </p>
+    <input class="inSignupName" type="text" name="name" placeholder="John Doe">
+    <br>
+    <p class="ltext">
+      Email Address
+    </p>
+    <input class="inSignupEmail" type="email" name="email" placeholder="email@gmail.com">
+    <br>
+    <p class="ltext">
+      Password
+    </p>
+    <input class="inSignupPass" type="password" name="email" placeholder="password">
+    <br>
+    <input class="photoInput" name="profilePic" type="file" accept="image/jpg,image/png">
+    <progress class="progress hide">Loading</progress>
+    <button class="sbtn">Sign Up!</button>
+  </form>
+</body>
+<script type="module" src="/signup.js"></script>
+
+</html>

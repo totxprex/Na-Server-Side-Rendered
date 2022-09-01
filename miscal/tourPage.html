@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Page</title>
+  <link rel="icon" href="/img/favicon.png">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,1000&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/leaflet/leaflet.css">
+</head>
+
+<body class="tourPage">
+  <nav class="navbarCont_tourPage">
+    <p style="color: white;" class="screen_title">
+      ALL TOURS
+    </p>
+    <img class="menu_img" src="img/logo-white.png"></img>
+    <div class="menu">
+      <button class="login_Btn">Log In</button>
+      <button class="signup_Btn">Sign Up</button>
+    </div>
+  </nav>
+  <div class="image_large">
+    <div class="title">THE PARK CAPMPER TOUR</div>
+    <br>
+    <div class="lil_details">🌍 THE PARK CAPMPER TOUR &nbsp; &nbsp; &nbsp; &nbsp; 📆 MIAMI, US</div>
+  </div>
+  <div class="screen2_cont">
+    <div class="div1">
+      <div>
+        <h3 style="margin-left: 10px;">QUICK FACTS</h3>
+        <ul>
+          <li class="list">
+            🌍 NEXT DATE <span style="color: rgb(99, 96, 96);"> &nbsp; &nbsp; August 2021</span>
+          </li>
+          <li class="list">
+            🚩 DIFFICULTY <span style="color: rgb(99, 96, 96);"> &nbsp; &nbsp; Medium</span>
+          </li>
+          <li class="list">
+            🙎 PARTICIPANTS <span style="color: rgb(99, 96, 96);"> &nbsp; &nbsp;15 People</span>
+          </li>
+          <li class="list">
+            📆 RATING <span style="color: rgb(99, 96, 96);"> &nbsp; &nbsp; 4.7/5</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="margin-top: 30px;">YOUR TOUR GUIDES</h3>
+        <ul class="tour_guides_lists">
+          <li class="list_tour">
+            <img class="tourGuide_img" src="/img/leo.jpg" alt=""> LEAD GUIDE <span style="color: rgb(99, 96, 96);">
+              Avril
+              Lavange</span>
+          </li>
+          <li class="list_tour">
+            <img class="tourGuide_img" src="/img/leo.jpg" alt=""> TOUR GUIDE <span style="color: rgb(99, 96, 96);">
+              Avril
+              Lavange</span>
+          </li>
+          <li class="list_tour">
+            <img class="tourGuide_img" src="/img/leo.jpg" alt=""> TOUR GUILDE <span style="color: rgb(99, 96, 96);">
+              Avril
+              Lavange</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="div2">
+      <h2 class="abt">ABOUT THE PARK CAMPERT TOUR</h2>
+      <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will
+        uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+      </p>
+    </div>
+  </div>
+  <div class="screen3_image_gallery">
+    <img src="/img/tours/tour-1-1.jpg" alt="">
+    <img src="/img/tours/tour-1-2.jpg" alt="">
+    <img src="/img/tours/tour-1-2.jpg" alt="">
+  </div>
+  <div id="map">
+
+  </div>
+  <div class="review_cont">
+    <div class="each_rev_cont">
+      <div class="each_reviews">
+        <img class="review_img" src="/img/leo.jpg" alt=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h5>Arya Stark</h5>
+        <p>
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+          opposed to using 'Content here, content here', making it look like readable English
+        </p>
+
+        <img class="review_star" src="/img/1_star.png" alt="">
+      </div>
+    </div>
+  </div>
+  <footer class="ft">
+    <a href="" target="_blank" alt="Home">Home</a>
+    <a href="" target="_blank">About</a>
+    <a href="" target="_blank">Login</a>
+    <a href="" target="_blank">Contact Us</a>
+  </footer>
+</body>
+<script src="/leaflet/leaflet.js"></script>
+<script type="module" src="/tourPage.js"></script>
+
+</html>
