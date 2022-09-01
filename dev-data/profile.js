@@ -9,13 +9,13 @@ if (!localStorage.getItem('natourstoken')) {
 
 else {
 
-  let backendserver = `https://shielded-scrubland-82465.herokuapp.com/vlogin`
+  let backendserver = `https://shielded-scrubland-82465.herokuapp.com/`
 
   document.querySelector('.screen_title').addEventListener('click', function () {
-    document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin/`
+    document.location.href = `https://shielded-scrubland-82465.herokuapp.com/`
   })
   document.querySelector('.signout_Btn').addEventListener('click', function () {
-    document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin/`
+    document.location.href = `https://shielded-scrubland-82465.herokuapp.com/`
     localStorage.removeItem('natourstoken')
   })
 

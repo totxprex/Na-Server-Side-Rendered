@@ -2,7 +2,7 @@
 
 let tour = document.querySelector(`.title`).textContent.replaceAll(` `, `-`)
 
-const serverUrl = `https://shielded-scrubland-82465.herokuapp.com/vlogin`
+const serverUrl = `https://shielded-scrubland-82465.herokuapp.com/`
 
 let map_container = document.querySelector('map_cont')
 
@@ -63,15 +63,15 @@ fetch(`${serverUrl}/tours/1680/${localStorage.getItem('natourstoken')}/${tour}`)
 
 
 document.querySelector('.screen_title').addEventListener('click', function () {
-  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin/`
+  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/`
 })
 
 document.querySelector('.login_Btn').addEventListener('click', function () {
-  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin/vlogin`
+  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin`
 })
 
 document.querySelector('.signup_Btn').addEventListener('click', function () {
-  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin/vsignup`
+  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vsignup`
 })
 
 if (localStorage.getItem('natourstoken')) {
@@ -87,6 +87,6 @@ document.querySelector('.profileImg ')?.addEventListener('click', function () {
 })
 
 document.querySelector('.signout_Btn').addEventListener('click', function () {
-  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin/`
+  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/`
   localStorage.removeItem('natourstoken')
 })
