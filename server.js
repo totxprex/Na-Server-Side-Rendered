@@ -1,6 +1,6 @@
 let express = require('express')
 let app = express()
-app.listen(5500, "127.0.0.1", function () {
+app.listen(process.env.PORT, function () {
   console.log("Natours Server Connected @ 127.0.0.1:5500")
 })
 
