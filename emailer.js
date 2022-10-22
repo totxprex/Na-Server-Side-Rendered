@@ -7,8 +7,8 @@ let emailer = function (emailOptions) {
     port: 25,
     secure: false,
     auth: {
-      user: "ee3ae1e1718976",
-      pass: "7b92081c0d5267"
+      user: "",
+      pass: ""
     }
   })
 
