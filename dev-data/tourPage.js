@@ -2,7 +2,7 @@
 
 let tour = document.querySelector(`.title`).textContent.replaceAll(` `, `-`)
 
-const serverUrl = `https://shielded-scrubland-82465.herokuapp.com`
+const serverUrl = `http://127.0.0.1`
 
 let map_container = document.querySelector('map_cont')
 
@@ -63,15 +63,15 @@ fetch(`${serverUrl}/tours/1680/${localStorage.getItem('natourstoken')}/${tour}`)
 
 
 document.querySelector('.screen_title').addEventListener('click', function () {
-  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/`
+  document.location.href = `http://127.0.0.1/`
 })
 
 document.querySelector('.login_Btn').addEventListener('click', function () {
-  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vlogin`
+  document.location.href = `http://127.0.0.1/vlogin`
 })
 
 document.querySelector('.signup_Btn').addEventListener('click', function () {
-  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/vsignup`
+  document.location.href = `http://127.0.0.1/vsignup`
 })
 
 if (localStorage.getItem('natourstoken')) {
@@ -87,6 +87,6 @@ document.querySelector('.profileImg ')?.addEventListener('click', function () {
 })
 
 document.querySelector('.signout_Btn').addEventListener('click', function () {
-  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/`
+  document.location.href = `http://127.0.0.1/`
   localStorage.removeItem('natourstoken')
 })

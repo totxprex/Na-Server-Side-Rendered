@@ -1,6 +1,6 @@
 'use strict'
 
-const serverUrl = `https://shielded-scrubland-82465.herokuapp.com`
+const serverUrl = `http://127.0.0.1:5500`
 
 document.querySelectorAll('.details_Btn').forEach(function (e) {
   e.addEventListener('click', function (btn) {
@@ -40,6 +40,6 @@ document.querySelector('.profileImg ')?.addEventListener('click', function(){
 
 
 document.querySelector('.signout_Btn').addEventListener('click', function () {
-  document.location.href = `https://shielded-scrubland-82465.herokuapp.com/`
+  document.location.href = `http://127.0.0.1:5500/`
   localStorage.removeItem('natourstoken')
 })
